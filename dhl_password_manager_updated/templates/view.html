@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ver Contraseña - {{ site }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="header">
+    <h1>Contraseña para {{ site }}</h1>
+  </div>
+  <div class="container">
+    <p><strong>Usuario:</strong> {{ username }}</p>
+    <p><strong>Contraseña:</strong> {{ password }}</p>
+    <a href="{{ url_for('index') }}">Volver</a>
+  </div>
+</body>
+</html>
